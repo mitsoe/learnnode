@@ -1,0 +1,13 @@
+extends layout
+
+include mixins/_loginForm
+
+block content
+    .inner
+    form.form(method="POST")
+        h2 Reset your password
+        label(for="password") Password
+        input(type="password" name="password")
+        label(for="password-confirm") Password-confirm
+        input(type="password" name="password-confirm")
+        input.button(type="submit" value="Reset password")
